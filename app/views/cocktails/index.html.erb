@@ -4,9 +4,15 @@
       <h1>BARTENDER</h1>
     </div>
   </div>
-
+  <br>
 
 <div class="container">
+  <hr>
+    <div class="btn-medium">
+        <%= link_to "Add a Cocktail", new_cocktail_path %>
+    </div>
+  <hr>
+
   <div class="cards">
     <% @cocktails.each do |cocktail| %>
       <% if cocktail.photo.url.nil? %>
@@ -19,9 +25,5 @@
         </div>
       <% end %>
     <% end %>
-  </div>
-
-  <div class="btn btn-outline-primary btn-rounded waves-effect">
-      <%= link_to "Add a Cocktail", new_cocktail_path %>
   </div>
 </div>

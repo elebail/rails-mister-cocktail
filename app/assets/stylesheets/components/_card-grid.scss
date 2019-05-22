@@ -3,7 +3,17 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 16px;
+  a {
+  color: white;
+  text-decoration: none;
+  }
+  a:hover {
+  text-decoration: none;
+  color: rgb(220, 220, 220);
+  }
 }
+
+
 
 .card-category {
   background-size: cover;
